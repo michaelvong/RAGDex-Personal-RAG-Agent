@@ -1,5 +1,5 @@
 # Ignore all files in raw data
-data/raw/
+rag_agent/data/raw/*
 
 # Ignore all files in raw data
 data/processed/
