@@ -1,0 +1,8 @@
+# Ignore all files in raw data
+data/raw/
+
+# Ignore all files in raw data
+data/processed/
+
+# Or ignore only PDFs
+data/raw/**/*.pdf
