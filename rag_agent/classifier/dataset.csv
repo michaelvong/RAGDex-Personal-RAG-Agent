@@ -1,0 +1,501 @@
+query,label
+How does map-reduce work?,general
+How does Dijkstra's algorithm work?,general
+How does OAuth differ from JWT?,general
+What is the difference between a process and a daemon?,general
+How does a VPN work?,general
+Which chunks cover serverless monitoring and logging?,retrieval
+Which documents describe multi-user project workflows?,retrieval
+Where are front-end and back-end interaction flows described?,retrieval
+What is a primary key in a database?,general
+Explain real-time collaboration flows for project boards,retrieval
+Which database did I use in my full stack project?,retrieval
+What is the difference between vertical slicing and horizontal slicing in architecture?,general
+What benefits did real-time syncing provide in my project?,retrieval
+Which chunks cover serverless project testing and validation?,retrieval
+What is a hash map?,general
+Which sections describe API endpoint implementation in TaskBin?,retrieval
+Which of my documents mention AWS Amplify?,retrieval
+What is the difference between data sharding and data partitioning?,general
+Explain what eventual consistency means,general
+What version of API Gateway did I use in the serverless app?,retrieval
+Find the chunk discussing Amplify usage in my resume,retrieval
+What documents describe multi-user task updates?,retrieval
+Summarize TaskBin real-time project management workflows,retrieval
+Explain what the saga pattern is in microservices,general
+Which sections explain multi-user project board architecture?,retrieval
+How does token-based authentication differ from session-based?,general
+What is a lambda function in Python?,general
+Summarize API Gateway and Lambda integration flows,retrieval
+Where are serverless deployment pipelines explained?,retrieval
+Explain what the event-driven architecture pattern is,general
+List all documents covering project board event handling?,retrieval
+Which chunks cover deployment pipelines for TaskBin?,retrieval
+Which files mention TaskBin's task management capabilities?,retrieval
+What is the difference between PUT and PATCH in REST?,general
+Explain how WebSockets were used in my board app,retrieval
+Summarize TaskBin project orchestration and workflow,retrieval
+Where do I explain serverless resource management?,retrieval
+Explain WebSocket implementation for project updates,retrieval
+Explain what reactive programming is,general
+Where do I describe project lifecycle management?,retrieval
+Explain what idempotency means in APIs,general
+Which sections describe task lifecycle management in my projects?,retrieval
+What is a monad in functional programming?,general
+Explain what eventual consistency means in practice,general
+Which chunks cover front-end and back-end data flow?,retrieval
+What programming languages were used in my project documentation?,retrieval
+What is the difference between soft delete and hard delete?,general
+Summarize all real-time collaboration features in my resume documents,retrieval
+List chunks mentioning serverless architecture best practices,retrieval
+Summarize Lambda function flows in TaskBin,retrieval
+What is a B-tree?,general
+Which sections explain AWS service interactions in projects?,retrieval
+Where did I mention Cognito in my career record?,retrieval
+Explain what a binary heap is,general
+What is eventual consistency in distributed systems?,general
+Which sections detail API routing in TaskBin?,retrieval
+Find sections in my resume that mention team collaboration,retrieval
+What is the difference between REST and GraphQL?,general
+Which documents contain serverless architecture diagrams?,retrieval
+Explain real-time task notifications in my career documents,retrieval
+What is the difference between a shallow clone and deep clone in git?,general
+What is a sparse table data structure?,general
+Where do I detail the project lifecycle for TaskBin?,retrieval
+What sections cover API Gateway routing and requests?,retrieval
+Explain what observability means in software systems,general
+What is Kubernetes used for?,general
+Summarize serverless workflow orchestration in TaskBin projects,retrieval
+What is a message queue?,general
+Where are API Gateway endpoint definitions documented?,retrieval
+List the components used in the serverless project detailed in my docs,retrieval
+Explain real-time project board monitoring in my career files,retrieval
+List all references to WebSocket events in TaskBin,retrieval
+How does optimistic UI update work?,general
+Explain what CI/CD means,general
+Where are API Gateway and Lambda integrations detailed?,retrieval
+What is the state design pattern?,general
+Find references to CI/CD pipelines in my career files,retrieval
+What is the difference between synchronous replication and asynchronous replication?,general
+What is the difference between in-process and out-of-process caching?,general
+Explain front-end real-time data updates in my projects,retrieval
+Which PDF contains my project timeline for TaskBin?,retrieval
+What is a try-catch block?,general
+What is the difference between marshalling and serialization?,general
+What is a singleton pattern?,general
+Which technologies are listed under my cloud projects in the resume?,retrieval
+What is tail recursion?,general
+What is the difference between a compiler and an interpreter?,general
+Describe the purpose of TaskBin in my resume,retrieval
+Which files explain authentication and authorization in TaskBin?,retrieval
+Where do I detail DynamoDB table structures in my docs?,retrieval
+Which project documents contain workflow diagrams for TaskBin?,retrieval
+Explain what a distributed system is,general
+List all documents covering multi-user notifications,retrieval
+Summarize all AWS integrations in my resume documents,retrieval
+What is the flyweight design pattern?,general
+What metrics or outcomes are documented for my projects?,retrieval
+List chunks detailing serverless front-end integrations,retrieval
+How does rate limiting work?,general
+What is the null object pattern?,general
+Explain what WebSockets are,general
+What is a graph data structure?,general
+Where in my resume do I describe my contributions to open source?,retrieval
+Where do I detail front-end and back-end communication?,retrieval
+Where do I describe user notification and task update flows?,retrieval
+What is the difference between horizontal and vertical partitioning?,general
+Explain what the mediator pattern is,general
+Where do I describe API requests and responses in TaskBin?,retrieval
+Explain what idempotent HTTP methods are,general
+Which project in my career files mentions AWS Lambda triggers?,retrieval
+What is the prototype design pattern?,general
+What is a Van Emde Boas tree?,general
+Where do I describe AWS service usage for notifications?,retrieval
+What is the difference between SQL and NoSQL databases?,general
+What is an interface segregation principle?,general
+Explain what SOLID stands for,general
+List all project documentation covering TaskBin dashboards,retrieval
+Summarize TaskBin real-time dashboard and task assignment flows,retrieval
+Explain what domain-driven design is,general
+Explain how real-time data is synchronized across users,retrieval
+Where do I describe project board event handling?,retrieval
+Where are TaskBin back-end integrations explained?,retrieval
+Which chunks cover dashboard notifications and updates?,retrieval
+List all multi-user collaboration examples in my documents,retrieval
+Which chunks cover front-end integration with AWS services?,retrieval
+What is the difference between SOAP and REST?,general
+Where do I describe project board notifications and updates?,retrieval
+Where are TaskBin dashboard features explained?,retrieval
+What is the difference between pessimistic and optimistic concurrency control?,general
+What is the difference between TCP and UDP?,general
+What is a design pattern?,general
+What is machine learning?,general
+Explain the difference between horizontal and vertical scaling,general
+What documents explain front-end and back-end interactions?,retrieval
+How does OAuth 2.0 work?,general
+Explain the use of AWS services in my documents,retrieval
+Where do I detail real-time collaboration workflows?,retrieval
+How does a write-ahead log work in databases?,general
+What are the real-time update mechanisms in my project documents?,retrieval
+What chunks cover authentication flows using Cognito?,retrieval
+What is the difference between a hot and cold observable?,general
+Explain what tree traversal algorithms are,general
+What is the difference between a stack and a queue?,general
+What is the adapter design pattern?,general
+What is a suffix array?,general
+What is the visitor pattern in design?,general
+How does multiversion concurrency control work?,general
+Which chunks cover front-end data binding to back-end services?,retrieval
+Where do I describe real-time synchronization in TaskBin?,retrieval
+What is a splay tree?,general
+Explain what the CAP theorem means for distributed systems,general
+Summarize TaskBin multi-user collaboration features,retrieval
+Which project descriptions include AWS integrations?,retrieval
+Explain serverless workflow orchestration in TaskBin projects,retrieval
+What AWS component handled authentication in my project?,retrieval
+Explain what service mesh means in microservices,general
+Where are event-driven updates described in project documentation?,retrieval
+How does the memento pattern work?,general
+Summarize serverless workflow and TaskBin architecture,retrieval
+List chunks mentioning multi-user editing capabilities,retrieval
+How did I implement invite functionality in TaskBin?,retrieval
+How does content negotiation work in HTTP?,general
+Where are project board task updates detailed?,retrieval
+List all chunks mentioning WebSocket message handling,retrieval
+Explain serverless resource allocation in my resume documents,retrieval
+How does consistent hashing solve load balancing?,general
+List all authentication methods I used in serverless projects,retrieval
+Explain what containerization means,general
+What does my resume say about the tools I used for deployment?,retrieval
+What is a rope data structure?,general
+How does a DNS cache work?,general
+How does pub/sub messaging work?,general
+List all chunks mentioning real-time task assignment and updates,retrieval
+How does memoization work?,general
+Which sections explain Lambda function scheduling?,retrieval
+Explain what canary deployments are,general
+Which documents mention React or front-end frameworks I used?,retrieval
+Explain what the chain of responsibility pattern is,general
+How does a load balancer work?,general
+Where are API Gateway and Lambda interactions described?,retrieval
+What is an AVL tree?,general
+Which sections explain real-time task updates and notifications?,retrieval
+Where do I explain front-end data binding with AWS back-end?,retrieval
+Where do I describe API Gateway request routing in TaskBin?,retrieval
+Show chunks explaining AWS service orchestration in projects,retrieval
+How does the flyweight pattern reduce memory usage?,general
+What is a DAG in computer science?,general
+Where in my resume do I mention multi-user collaboration?,retrieval
+How do I reverse a string in Python?,general
+How does indexing improve database performance?,general
+How does Redis work as a cache?,general
+What is a foreign key constraint?,general
+Which document sections cover TaskBin features in detail?,retrieval
+Where did I describe authentication flow in my project?,retrieval
+What is the difference between unit and integration testing?,general
+Explain what graceful degradation means in software,general
+What is the difference between strong and eventual consistency?,general
+Where are multi-user boards and invitation flows described?,retrieval
+Explain what test-driven development is,general
+Explain what a closure is in JavaScript?,general
+List all documents covering project board task notifications?,retrieval
+How does the abstract factory pattern work?,general
+What sections describe front-end interaction with AWS back-end?,retrieval
+How does the visitor pattern separate algorithms from objects?,general
+Where do I describe API routing and Lambda triggers?,retrieval
+What is the difference between synchronous and asynchronous programming?,general
+Where do I describe API Gateway endpoint mapping?,retrieval
+What is the SOLID principle in software design?,general
+Summarize real-time collaboration mechanisms in TaskBin,retrieval
+What is the proxy design pattern?,general
+What is the difference between mutable and immutable objects?,general
+What role did Lambda functions play in my architecture?,retrieval
+Explain front-end integration with AWS services in projects,retrieval
+What is the difference between a relational and document database?,general
+What is a k-d tree?,general
+Which chunks cover WebSocket implementation for task updates?,retrieval
+List all chunks covering serverless architecture patterns,retrieval
+Explain what service discovery is in microservices,general
+Which chunks cover real-time dashboard updates?,retrieval
+What is an interval tree?,general
+What is the difference between a process and a thread?,general
+What is a REST API?,general
+What is the difference between an ORM and raw SQL?,general
+What AWS services did I use in my Serverless Project Board?,retrieval
+What skills are listed under the TaskBin project in my docs?,retrieval
+What is a red-black tree?,general
+What is the interaction flow for users in my board app?,retrieval
+What is a priority queue?,general
+List all Lambda function responsibilities mentioned in my documents,retrieval
+Where do I describe front-end integration with Cognito?,retrieval
+What is a topological sort?,general
+What environments did I deploy to according to my career docs?,retrieval
+Which documents explain TaskBin API requests?,retrieval
+Where do I explain serverless backend monitoring?,retrieval
+What does my resume say about my role in TaskBin development?,retrieval
+What is the difference between compile-time and runtime errors?,general
+Which sections explain task lifecycle management in projects?,retrieval
+What is a race condition?,general
+What PDFs detail real-time notifications and WebSocket usage?,retrieval
+What is a webhook?,general
+Which sections describe serverless project orchestration?,retrieval
+Explain what CORS is,general
+How many projects are listed in my career documents?,retrieval
+How does the bridge design pattern work?,general
+Explain AWS Amplify deployment in my project files,retrieval
+Show all references to AWS services in my career files,retrieval
+What is the difference between eager and lazy evaluation?,general
+What is the difference between monolith and microservices?,general
+What is the difference between a framework and a library?,general
+What is the difference between concurrency and parallelism?,general
+What is the difference between a test double and a mock?,general
+What is the difference between coupling and cohesion in software?,general
+Which sections explain cloud service orchestration in projects?,retrieval
+Which sections explain AWS service orchestration for project boards?,retrieval
+How does garbage collection work in Java?,general
+What is the difference between replication and partitioning in databases?,general
+Explain the concept of recursion in programming,general
+Explain what the twelve-factor methodology says about config,general
+What is eventual consistency?,general
+How does the observer pattern work in JavaScript?,general
+What is the difference between a router and a switch in networking?,general
+List all documents detailing real-time project board events,retrieval
+Explain AWS Amplify and Cognito integration in my project files,retrieval
+How does the interpreter pattern parse expressions?,general
+What is the factory design pattern?,general
+Summarize serverless backend functionality in my project files,retrieval
+Which chunks explain WebSocket usage for notifications?,retrieval
+Explain front-end integration with Lambda in my career projects,retrieval
+Where are API Gateway request and response flows explained?,retrieval
+Summarize what my resume says about my cloud experience,retrieval
+List all chunks explaining serverless project deployment,retrieval
+Where do I explain Lambda function interactions with DynamoDB?,retrieval
+Where do I describe the challenges I solved in my projects?,retrieval
+Which project in my docs uses WebSockets for live updates?,retrieval
+List all documents covering Lambda triggers and functions?,retrieval
+Explain what HATEOAS means in REST APIs,general
+Explain how I implemented cloud components in my projects,retrieval
+Summarize TaskBin project board real-time features,retrieval
+Explain what event sourcing is,general
+What is the difference between encapsulation and abstraction?,general
+Explain what MVVM stands for,general
+List all chunks mentioning API Gateway routing and endpoints,retrieval
+Find the section where I mention DynamoDB usage,retrieval
+Explain front-end real-time updates and data binding,retrieval
+Explain how AWS services are coordinated in my career projects?,retrieval
+What sections provide step-by-step guides for TaskBin?,retrieval
+What is the difference between synchronous and asynchronous messaging?,general
+What is the difference between authentication and authorization?,general
+Explain what distributed tracing is,general
+Explain what immutable infrastructure means,general
+What is the difference between stack and heap memory?,general
+How did I integrate Amplify with my front-end according to my docs?,retrieval
+What is the difference between a binary tree and a BST?,general
+Explain what zero-downtime deployment means,general
+Where do I describe front-end integration with DynamoDB?,retrieval
+How do database transactions maintain atomicity?,general
+Summarize TaskBin task assignment and updates,retrieval
+Which chunks describe event-driven architecture for updates?,retrieval
+Show details of TaskBin implementation in my documents,retrieval
+Which sections mention AWS Amplify deployment details?,retrieval
+How does a reverse proxy work?,general
+Which sections explain task updates and notifications?,retrieval
+What is the difference between compiled and interpreted languages?,general
+Explain what sharding means in databases,general
+What is the difference between a monorepo and polyrepo?,general
+Identify all AWS resources referenced in my resume,retrieval
+Explain what blue-green vs canary deployment means,general
+Where do I describe project board creation steps?,retrieval
+Explain what ACID properties are in databases,general
+Show all references to serverless infrastructure in my career files,retrieval
+What is the difference between stateful and stateless services?,general
+What is a linked list?,general
+Explain real-time collaboration for TaskBin dashboards,retrieval
+How do I write a for loop in JavaScript?,general
+What is the difference between dynamic and static typing?,general
+List all serverless projects described in my career files,retrieval
+Which chunks describe TaskBin feature implementation?,retrieval
+Where are DynamoDB tables described in my career files?,retrieval
+Explain serverless project scaling in my resume documents,retrieval
+Explain what server-sent events are,general
+Which section mentions project boards with multiple users?,retrieval
+Explain serverless architecture decisions in my project files,retrieval
+Explain what a neural network is,general
+What is the difference between a full outer join and an inner join?,general
+List all real-time features in my project boards,retrieval
+Summarize serverless project board architecture,retrieval
+How does the strategy pattern enable polymorphism?,general
+How does DNS resolution work?,general
+How does session management work in web apps?,general
+Explain what the twelve-factor app methodology is,general
+What is a skip list?,general
+List all chunks covering serverless API integrations,retrieval
+Which PDFs explain project board creation and updates?,retrieval
+What is the difference between eager loading and lazy loading in ORMs?,general
+Summarize TaskBin real-time task assignment features,retrieval
+List chunks detailing API Gateway request handling in TaskBin,retrieval
+How does database replication work?,general
+Explain what type inference is,general
+List all examples of DynamoDB usage in my resume,retrieval
+Describe user invitation flow for boards as per my resume,retrieval
+What is a two-phase commit?,general
+What are the key features of TaskBin according to my documents?,retrieval
+What chunks cover AWS Cognito authentication steps?,retrieval
+How does the proxy pattern add behavior to objects?,general
+Explain what Docker is,general
+How do promises work in JavaScript?,general
+How does a CDN work?,general
+How does the interpreter pattern work?,general
+How does the iterator pattern work?,general
+How does connection pooling work?,general
+How do WebSockets differ from HTTP long polling?,general
+List chunks explaining multi-user project board features,retrieval
+What is a disjoint set (union-find)?,general
+Where do I describe front-end data interaction with serverless back-end?,retrieval
+How does the MVC design pattern work?,general
+Which sections explain Lambda function coordination?,retrieval
+Where do I describe user notification flows in TaskBin?,retrieval
+Explain real-time updates for project boards in my resume documents,retrieval
+Explain what chaos engineering is,general
+Which chunks detail Lambda triggers for project tasks?,retrieval
+What is the observer pattern?,general
+What is the difference between a socket and a port?,general
+Explain what lazy loading means,general
+Explain what the strangler fig pattern is in microservices,general
+Explain what dependency inversion means,general
+Explain what continuous delivery vs continuous deployment means,general
+Which PDFs contain real-time board management examples?,retrieval
+How does the command pattern enable undo/redo?,general
+What is the difference between a class and an interface?,general
+How does an API rate limiter work?,general
+What features did I implement for real-time updates in TaskBin?,retrieval
+How many serverless projects are recorded in my documents?,retrieval
+Explain what dependency injection is,general
+Which of my documents describe the front-end stack I used?,retrieval
+What documents cover real-time user notifications?,retrieval
+What is the difference between a fat client and thin client?,general
+What is the capital of France?,general
+Summarize the serverless architecture documented in TaskBin,retrieval
+List all chunks covering API Gateway endpoints and integration?,retrieval
+What is a segment tree?,general
+What PDFs explain user invitation management in projects?,retrieval
+Explain what feature flags are,general
+What is the difference between a hard link and a symbolic link?,general
+What is the difference between integration testing and end-to-end testing?,general
+Explain DynamoDB table designs in my project documentation,retrieval
+Explain serverless project monitoring in my career files,retrieval
+List all chunks covering serverless project deployment strategies,retrieval
+What is the difference between symmetric and asymmetric encryption?,general
+What is a relational database?,general
+Explain what an API gateway does,general
+Explain what caching strategies like LRU and LFU are,general
+Summarize TaskBin multi-user task assignment and updates,retrieval
+Explain what middleware is in web development,general
+How does the composite pattern work with tree structures?,general
+What are my key resume projects listed under cloud computing?,retrieval
+What is a suffix tree?,general
+How does garbage collection work in Python?,general
+Which chunks cover Lambda triggers for notifications?,retrieval
+What is the composite design pattern?,general
+Where do I discuss Lambda triggers for updates in TaskBin?,retrieval
+What is the purpose of a foreign key?,general
+Where are back-end serverless flows described in my projects?,retrieval
+What is the purpose of an index in a database?,general
+List all PDFs where I describe real-time board updates,retrieval
+What is a deadlock?,general
+What sections explain Cognito usage in TaskBin?,retrieval
+List all examples of Amplify and Cognito usage in projects,retrieval
+Explain how real-time notifications work in my projects,retrieval
+What is a circuit breaker pattern?,general
+Explain what an event loop is,general
+Where do I discuss task assignment flows in TaskBin?,retrieval
+How does promise chaining work in JavaScript?,general
+How does the template method pattern work?,general
+What does my documentation say about error handling in TaskBin?,retrieval
+How does an LRU cache work?,general
+What is the difference between strong typing and weak typing?,general
+How does JWT authentication work?,general
+Which sections explain AWS service integration in projects?,retrieval
+Explain what blue-green deployment means,general
+How does write-through caching differ from write-behind?,general
+Explain what the command pattern is,general
+What is the strategy design pattern?,general
+How do you handle N+1 query problems?,general
+Explain API Gateway routing for my serverless app,retrieval
+List all chunks detailing TaskBin real-time collaboration features,retrieval
+Summarize API Gateway routing and integration in projects,retrieval
+What is the difference between blocking and non-blocking I/O?,general
+Which chunks describe front-end interactions with back-end?,retrieval
+Which of my documents reference third-party integrations in TaskBin?,retrieval
+Explain what CQRS stands for and means,general
+How does the decorator pattern differ from the proxy pattern?,general
+What is consistent hashing used for?,general
+How does database connection pooling reduce overhead?,general
+Explain the concept of polymorphism in OOP,general
+What is a max-flow min-cut theorem?,general
+How does photosynthesis work?,general
+List all documents detailing user notification handling,retrieval
+Find mentions of S3 in my career documents,retrieval
+How does the facade design pattern work?,general
+What is a proxy pattern?,general
+Where are authentication and authorization flows detailed?,retrieval
+Where are front-end and back-end communication flows detailed?,retrieval
+Tell me about the TaskBin architecture described in my resume,retrieval
+Which sections explain multi-user event handling?,retrieval
+Which chunks explain event-driven architecture in my projects?,retrieval
+Describe how Lambda interacts with DynamoDB in my docs,retrieval
+Which chunks cover serverless event-driven architecture?,retrieval
+Explain the CAP theorem,general
+Where do I describe event-driven updates in my career projects?,retrieval
+List all tools and libraries mentioned in my project files,retrieval
+Find the section of my resume that describes my internship work,retrieval
+Which sections explain Lambda and DynamoDB interactions?,retrieval
+Where do I mention security measures in serverless apps?,retrieval
+Which sections cover TaskBin dashboard updates?,retrieval
+What is a Bloom filter?,general
+How does a trie data structure work?,general
+Which chunks describe API Gateway endpoints in my projects?,retrieval
+Summarize the Project Board document sections with project details,retrieval
+What is the difference between a mutex and a semaphore?,general
+What is a quad tree?,general
+Explain what API versioning strategies exist,general
+Where do I discuss serverless architecture in my career files?,retrieval
+What does HTTP stand for?,general
+How do you prevent SQL injection?,general
+How does HTTPS encryption work?,general
+What is a persistent data structure?,general
+What is an idempotent operation?,general
+Which chunks cover multi-user collaboration and notifications?,retrieval
+What are the steps for creating a project board as per my resume?,retrieval
+What is a microservices architecture?,general
+What is the difference between deep copy and shallow copy?,general
+What testing strategies are mentioned in my project documentation?,retrieval
+Which chunks cover real-time WebSocket event handling?,retrieval
+What sections explain how project data is stored and retrieved?,retrieval
+How does a content delivery network reduce latency?,general
+Where do I detail the user experience flow in my projects?,retrieval
+Which sections explain Lambda function triggers for project tasks?,retrieval
+What is the difference between optimistic and pessimistic locking?,general
+Which files explain real-time task updates in TaskBin?,retrieval
+What chunks explain AWS Lambda triggers for events?,retrieval
+Where are multi-user collaboration flows explained?,retrieval
+Where are TaskBin project workflows explained?,retrieval
+How does two-factor authentication work?,general
+How does asymmetric encryption work?,general
+Summarize TaskBin real-time collaboration flows,retrieval
+What is the difference between TCP keep-alive and WebSocket ping-pong?,general
+Where are multi-user collaboration features detailed?,retrieval
+How do users get updates on project boards according to my records?,retrieval
+Where did I explain serverless backend architecture?,retrieval
+What is the difference between a white box and black box test?,general
+How does consistent hashing work?,general
+Explain what semantic versioning means,general
+Which document describes the serverless workflow for TaskBin?,retrieval
+What is the difference between polling and webhooks?,general
+What is the difference between breadth-first and depth-first search?,general
+Which documents list my technical skills?,retrieval
+Where do I describe API Gateway request handling for TaskBin?,retrieval
+List all chunks detailing serverless back-end architecture?,retrieval
+Which sections explain event-driven updates for project boards?,retrieval
+Where are serverless project scaling strategies explained?,retrieval
+How does a binary search tree work?,general
