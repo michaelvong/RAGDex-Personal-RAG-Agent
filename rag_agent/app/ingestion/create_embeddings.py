@@ -8,102 +8,108 @@ from sentence_transformers import SentenceTransformer
 
 
 class ChunkVectorizer:
-    def __init__(self, 
-                 model_name="sentence-transformers/all-MiniLM-L6-v2", 
-                 chunk_dir="C:\\Users\\Michael\\PycharmProjects\\PersonalRAG\\rag_agent\\data\\processed",
-                 batch_size=64,
-                 device=None):
+    def __init__(
+        self,
+        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        chunk_dir=r"C:\Users\Michael\PycharmProjects\PersonalRAG\rag_agent\data\processed\chunks",
+        output_dir=r"C:\Users\Michael\PycharmProjects\PersonalRAG\rag_agent\data\processed\embeddings",
+        batch_size=64,
+        device=None,
+    ):
         self.chunk_dir = chunk_dir
+        self.output_dir = output_dir
         self.batch_size = batch_size
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
         self.model = SentenceTransformer(model_name, device=self.device)
-        self.chunks = []
-        self.metadata = []
-        self.ids = []
-        self.embeddings = []
 
     # -------------------------------
-    # Load all JSON chunk files
+    # Process ONE domain file
     # -------------------------------
-    def load_chunks(self):
-        print(self.chunk_dir)
-        json_files = glob.glob(os.path.join(self.chunk_dir, "*.json"))
-        print(f"Found {len(json_files)} JSON files:")
-        for f in json_files:
-            print(f)
-        for file in json_files:
-            with open(file, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                for item in data:
-                    text = item.get("text", "").strip()
-                    if not text:
-                        continue
+    def process_file(self, chunk_path):
+        filename = os.path.basename(chunk_path)
+        domain_name = filename.replace("_chunks.json", "")
+        output_path = os.path.join(self.output_dir, f"{domain_name}_embeddings.json")
 
-                    chunk_id = item.get(
-                        "id", hashlib.md5(text.encode("utf-8")).hexdigest()
-                    )
-                    meta = {
-                        "source": item.get("source", "unknown"),
-                        "chunk_index": item.get("chunk_index", -1)
-                    }
+        with open(chunk_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
 
-                    self.chunks.append(text)
-                    self.metadata.append(meta)
-                    self.ids.append(chunk_id)
-        print(f"Loaded {len(self.chunks)} chunks")
+        chunks = []
+        metadata = []
+        ids = []
 
-    # -------------------------------
-    # Deduplicate chunks by ID
-    # -------------------------------
-    def deduplicate_chunks(self):
+        for item in data:
+            text = item.get("text", "").strip()
+            if not text:
+                continue
+
+            chunk_id = item.get(
+                "id", hashlib.md5(text.encode("utf-8")).hexdigest()
+            )
+
+            meta = {
+                "source": item.get("source", "unknown"),
+                "chunk_index": item.get("chunk_index", -1),
+                "domain": domain_name,  # 🔥 domain tag for filtering later
+            }
+
+            chunks.append(text)
+            metadata.append(meta)
+            ids.append(chunk_id)
+
+        print(f"[{domain_name}] Loaded {len(chunks)} chunks")
+
+        # Deduplicate
         unique = {}
-        for text, meta, cid in zip(self.chunks, self.metadata, self.ids):
+        for text, meta, cid in zip(chunks, metadata, ids):
             if cid not in unique:
                 unique[cid] = (text, meta)
-        self.ids = list(unique.keys())
-        self.chunks = [unique[cid][0] for cid in self.ids]
-        self.metadata = [unique[cid][1] for cid in self.ids]
-        print(f"After deduplication: {len(self.chunks)} chunks")
 
-    # -------------------------------
-    # Batch embedding of chunks
-    # -------------------------------
-    def embed_chunks(self, normalize=True):
-        self.embeddings = []
+        ids = list(unique.keys())
+        chunks = [unique[cid][0] for cid in ids]
+        metadata = [unique[cid][1] for cid in ids]
 
-        for i in tqdm(range(0, len(self.chunks), self.batch_size)):
-            batch_texts = self.chunks[i:i + self.batch_size]
+        print(f"[{domain_name}] After dedup: {len(chunks)} chunks")
+
+        # Embed
+        embeddings = []
+
+        for i in tqdm(range(0, len(chunks), self.batch_size), desc=f"Embedding {domain_name}"):
+            batch_texts = chunks[i:i + self.batch_size]
             batch_embeddings = self.model.encode(
                 batch_texts,
                 batch_size=self.batch_size,
                 convert_to_numpy=True,
-                normalize_embeddings=normalize
+                normalize_embeddings=True,
             )
-            self.embeddings.extend(batch_embeddings)
-        print(f"Embedded {len(self.embeddings)} chunks")
+            embeddings.extend(batch_embeddings)
 
-    # -------------------------------
-    # Save embeddings + metadata to JSON
-    # -------------------------------
-    def save_to_json(self, output_file="embeddings.json"):
+        # Save
+        os.makedirs(self.output_dir, exist_ok=True)
+
         output_data = []
-        for cid, text, meta, emb in zip(self.ids, self.chunks, self.metadata, self.embeddings):
+        for cid, text, meta, emb in zip(ids, chunks, metadata, embeddings):
             output_data.append({
                 "id": cid,
                 "text": text,
                 "metadata": meta,
-                "embedding": emb.tolist()
+                "embedding": emb.tolist(),
             })
 
-        with open(output_file, "w", encoding="utf-8") as f:
+        with open(output_path, "w", encoding="utf-8") as f:
             json.dump(output_data, f)
-        print(f"Saved {len(output_data)} embeddings to {output_file}")
+
+        print(f"[{domain_name}] Saved {len(output_data)} embeddings → {output_path}")
 
     # -------------------------------
-    # Full pipeline: load → deduplicate → embed → save
+    # Process ALL domains
     # -------------------------------
-    def run_pipeline(self, output_file="embeddings.json"):
-        self.load_chunks()
-        self.deduplicate_chunks()
-        self.embed_chunks()
-        self.save_to_json(output_file)
+    def run_pipeline(self):
+        chunk_files = glob.glob(os.path.join(self.chunk_dir, "*_chunks.json"))
+
+        if not chunk_files:
+            raise ValueError(f"No chunk files found in {self.chunk_dir}")
+
+        print(f"Found {len(chunk_files)} domain files")
+
+        for chunk_path in chunk_files:
+            self.process_file(chunk_path)
