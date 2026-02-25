@@ -100,12 +100,49 @@ class DocumentLoader:
     def normalize_text(self, text: str) -> str:
         return "\n".join([line.strip() for line in text.splitlines() if line.strip()])
 
-    def chunk_text(self, text: str) -> List[str]:
+    def chunk_text(self, text: str, chunk_size_tokens: int = 400, overlap_tokens: int = 80) -> List[str]:
+        """
+        Chunk text into token-based chunks with optional overlap.
+        Keeps chunks semantically coherent by joining sentences.
+
+        :param text: input text
+        :param chunk_size_tokens: target tokens per chunk
+        :param overlap_tokens: number of tokens to overlap between consecutive chunks
+        """
+        # Step 1: tokenize into sentences
         sentences = safe_sent_tokenize(text)
+
+        # Step 2: build token-based chunks
         chunks = []
-        for i in range(0, len(sentences), self.chunk_size):
-            chunk = " ".join(sentences[i : i + self.chunk_size])
-            chunks.append(chunk)
+        current_chunk = []
+        current_len = 0  # token count in current chunk
+
+        for sentence in sentences:
+            sentence_tokens = sentence.split()  # crude token count
+            sentence_len = len(sentence_tokens)
+
+            # if adding this sentence exceeds chunk size, finalize current chunk
+            if current_len + sentence_len > chunk_size_tokens and current_chunk:
+                chunks.append(" ".join(current_chunk))
+
+                # start new chunk with overlap
+                if overlap_tokens > 0:
+                    # keep last few tokens as overlap
+                    overlap_tokens_list = " ".join(current_chunk).split()[-overlap_tokens:]
+                    current_chunk = [" ".join(overlap_tokens_list)]
+                    current_len = len(overlap_tokens_list)
+                else:
+                    current_chunk = []
+                    current_len = 0
+
+            # add sentence to current chunk
+            current_chunk.append(sentence)
+            current_len += sentence_len
+
+        # add final chunk
+        if current_chunk:
+            chunks.append(" ".join(current_chunk))
+
         return chunks
 
     # ---------- Chunk ID generator ---------- #
